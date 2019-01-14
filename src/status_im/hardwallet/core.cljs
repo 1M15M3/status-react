@@ -10,7 +10,7 @@
             [status-im.accounts.create.core :as accounts.create]
             [status-im.node.core :as node]))
 
-(defonce default-pin "000000")
+(def default-pin "000000")
 
 (defn hardwallet-supported? [{:keys [db]}]
   (and config/hardwallet-enabled?
