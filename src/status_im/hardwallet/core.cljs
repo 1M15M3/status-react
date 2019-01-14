@@ -160,16 +160,21 @@
                 (navigate-to-enter-pin-screen)
                 (navigation/navigate-to-cofx :hardwallet-connect nil)))))
 
+(defn- vector->string [v]
+  "Converts numbers stored in vector into string,
+  e.g. [1 2 3 4 5 6] -> \"123456\""
+  (apply str v))
+
 (fx/defn unpair
   [{:keys [db]}]
-  (let [pin (apply str (get-in db [:hardwallet :pin :current]))
+  (let [pin (vector->string (get-in db [:hardwallet :pin :current]))
         pairing (get-in db [:hardwallet :secrets :pairing])]
     {:hardwallet/unpair {:pin     pin
                          :pairing pairing}}))
 
 (fx/defn unpair-and-delete
   [{:keys [db]}]
-  (let [pin (apply str (get-in db [:hardwallet :pin :current]))
+  (let [pin (vector->string (get-in db [:hardwallet :pin :current]))
         pairing (get-in db [:hardwallet :secrets :pairing])]
     {:hardwallet/unpair-and-delete {:pin     pin
                                     :pairing pairing}}))
@@ -263,8 +268,8 @@
 (fx/defn pin-match
   [{:keys [db] :as fx}]
   (let [pairing (get-in db [:hardwallet :secrets :pairing])
-        new-pin (apply str (get-in db [:hardwallet :pin :original]))
-        current-pin (apply str (get-in db [:hardwallet :pin :current]))]
+        new-pin (vector->string (get-in db [:hardwallet :pin :original]))
+        current-pin (vector->string (get-in db [:hardwallet :pin :current]))]
     (fx/merge fx
               {:db                    (assoc-in db [:hardwallet :pin :status] :verifying)
                :hardwallet/change-pin {:new-pin     new-pin
@@ -321,10 +326,7 @@
 
 (defn on-verify-pin-error
   [{:keys [db]} error]
-  (let [pairing (get-in db [:hardwallet :secrets :pairing])
-        pin-retry-counter (get-in db [:hardwallet :application-info :pin-retry-counter])
-        ;enter-step (if (<= pin-retry-counter 1) :puk :current)
-]
+  (let [pairing (get-in db [:hardwallet :secrets :pairing])]
     (log/debug "[hardwallet] verify pin error" error)
     {:hardwallet/get-application-info pairing
      :db                              (update-in db [:hardwallet :pin] merge {:status       :error
@@ -385,7 +387,7 @@
 
 (defn- verify-pin
   [{:keys [db] :as fx}]
-  (let [pin (apply str (get-in fx [:db :hardwallet :pin :current]))
+  (let [pin (vector->string (get-in fx [:db :hardwallet :pin :current]))
         pairing (get-in fx [:db :hardwallet :secrets :pairing])]
     {:db                    (assoc-in db [:hardwallet :pin :status] :verifying)
      :hardwallet/verify-pin {:pin     pin
@@ -393,7 +395,7 @@
 
 (defn- unblock-pin
   [{:keys [db] :as fx}]
-  (let [puk (apply str (get-in fx [:db :hardwallet :pin :puk]))
+  (let [puk (vector->string (get-in fx [:db :hardwallet :pin :puk]))
         pairing (get-in fx [:db :hardwallet :secrets :pairing])]
     {:db                     (assoc-in db [:hardwallet :pin :status] :verifying)
      :hardwallet/unblock-pin {:puk     puk
