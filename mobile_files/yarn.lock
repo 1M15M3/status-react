@@ -2080,14 +2080,9 @@ big-integer@^1.6.7:
   resolved "https://registry.yarnpkg.com/big-integer/-/big-integer-1.6.36.tgz#78631076265d4ae3555c04f85e7d9d2f3a071a36"
   integrity sha512-t70bfa7HYEA1D9idDbmuv7YbsbVkQ+Hp+8KFSul4aE5e/i1bjCNIRYJZlA8Q8p0r9T8cF/RVvwUgRA//FydEyg==
 
-"bignumber.js@github:status-im/bignumber.js#master":
+"bignumber.js@git+https://github.com/status-im/bignumber.js.git#v4.0.2-status":
   version "4.0.2"
-  uid cc066a0a3d6bfe0c436c9957f4ea8344bf963c89
-  resolved "https://codeload.github.com/status-im/bignumber.js/tar.gz/cc066a0a3d6bfe0c436c9957f4ea8344bf963c89"
-
-"bignumber.js@https://github.com/status-im/bignumber.js.git":
-  version "4.0.2"
-  resolved "https://github.com/status-im/bignumber.js.git#cc066a0a3d6bfe0c436c9957f4ea8344bf963c89"
+  resolved "git+https://github.com/status-im/bignumber.js.git#cc066a0a3d6bfe0c436c9957f4ea8344bf963c89"
 
 bl@^1.0.0:
   version "1.2.2"
@@ -7418,9 +7413,9 @@ web3-utils@1.0.0-beta.36:
 
 "web3@https://github.com/status-im/web3.js.git#features/pairing-message":
   version "0.20.1"
-  resolved "https://github.com/status-im/web3.js.git#5fd0b24fd10ce55183a5253a370840540a07db1e"
+  resolved "https://github.com/status-im/web3.js.git#dad342dc95f7d5a888411ed57c9618937e2b6ebd"
   dependencies:
-    bignumber.js "github:status-im/bignumber.js#master"
+    bignumber.js "git+https://github.com/status-im/bignumber.js.git#v4.0.2-status"
     crypto-js "^3.1.4"
     utf8 "^2.1.1"
     xhr2 "*"
