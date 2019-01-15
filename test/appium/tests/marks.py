@@ -9,7 +9,7 @@ medium = pytest.mark.medium
 low = pytest.mark.low
 
 account = pytest.mark.account
-all = pytest.mark.all
+upgrade = pytest.mark.upgrade
 api = pytest.mark.api
 chat = pytest.mark.chat
 chat_management = pytest.mark.chat_management
@@ -21,5 +21,6 @@ wallet_modal = pytest.mark.wallet_modal
 sign_in = pytest.mark.sign_in
 skip = pytest.mark.skip
 logcat = pytest.mark.logcat
+
 
 battery_consumption = pytest.mark.battery_consumption
