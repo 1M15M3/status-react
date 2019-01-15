@@ -1923,7 +1923,7 @@ babel-preset-fbjs@^2.1.2, babel-preset-fbjs@^2.1.4:
     babel-plugin-transform-react-display-name "^6.8.0"
     babel-plugin-transform-react-jsx "^6.8.0"
 
-babel-preset-react-native@5.0.2, babel-preset-react-native@^5.0.0:
+babel-preset-react-native@^5.0.0:
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/babel-preset-react-native/-/babel-preset-react-native-5.0.2.tgz#dfed62379712a9c017ff99ce4fbeac1e11d42285"
   integrity sha512-Ua5JeQ1yGK8UoydMPzE2Ghq5raOKxXzpyApYDuHi4etIbXi5+GnCin19Nu+1obLQCf2Dxy9Y/GZwI0rnNOjggA==
@@ -3872,9 +3872,9 @@ iconv-lite@^0.4.17, iconv-lite@^0.4.4, iconv-lite@~0.4.13:
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
 
-"identicon.js@https://github.com/status-im/identicon.js.git":
+"identicon.js@git+https://github.com/status-im/identicon.js.git":
   version "1.2.1"
-  resolved "https://github.com/status-im/identicon.js.git#4cd179daaf6f01384502b4b2c1876f982db0f57e"
+  resolved "git+https://github.com/status-im/identicon.js.git#4cd179daaf6f01384502b4b2c1876f982db0f57e"
 
 ieee754@^1.1.4:
   version "1.1.12"
@@ -5830,16 +5830,16 @@ react-native-background-timer@2.1.0-alpha.6:
   resolved "https://registry.yarnpkg.com/react-native-background-timer/-/react-native-background-timer-2.1.0-alpha.6.tgz#f8495a9c44d80295c088b09c59d88fdf0a8d6ecd"
   integrity sha512-2J87AlGjDsfujxdEGXJxqYpSVyNrgcfwqh0PDwesQoOCqmiIkLA7N0tLE4joB9N0oYMraIteFYaiUu8jJdO7oA==
 
-"react-native-camera@https://github.com/status-im/react-native-camera#1.1.5-1":
+"react-native-camera@git+https://github.com/status-im/react-native-camera.git#1.1.5-1":
   version "1.1.5"
-  resolved "https://github.com/status-im/react-native-camera#6de8c8d1ba28906ab014d717a33a7b6f73c433c5"
+  resolved "git+https://github.com/status-im/react-native-camera.git#6de8c8d1ba28906ab014d717a33a7b6f73c433c5"
   dependencies:
     lodash "^4.17.4"
     prop-types "^15.5.10"
 
-"react-native-config@https://github.com/status-im/react-native-config#0.11.2-1":
+"react-native-config@git+https://github.com/status-im/react-native-config.git#0.11.2-1":
   version "0.11.2"
-  resolved "https://github.com/status-im/react-native-config#f48d41012f812e1fc9dd6a78e874e3271e5e385e"
+  resolved "git+https://github.com/status-im/react-native-config.git#f48d41012f812e1fc9dd6a78e874e3271e5e385e"
 
 react-native-crypto@2.1.1:
   version "2.1.1"
@@ -5885,9 +5885,9 @@ react-native-fetch-polyfill@1.1.2:
   resolved "https://registry.yarnpkg.com/react-native-fetch-polyfill/-/react-native-fetch-polyfill-1.1.2.tgz#256b5a0abd78cc4992f7a7cf82543da2f2124a73"
   integrity sha1-JWtaCr14zEmS96fPglQ9ovISSnM=
 
-"react-native-firebase@https://github.com/status-im/react-native-firebase#5.0.0-rc1":
+"react-native-firebase@git+https://github.com/status-im/react-native-firebase.git#5.0.0-rc1":
   version "5.0.0-rc1"
-  resolved "https://github.com/status-im/react-native-firebase#46951bf438ba4965f314a1b75a68d174d8e3eb01"
+  resolved "git+https://github.com/status-im/react-native-firebase.git#46951bf438ba4965f314a1b75a68d174d8e3eb01"
   dependencies:
     opencollective-postinstall "^2.0.0"
     prop-types "^15.6.2"
@@ -5917,9 +5917,9 @@ react-native-image-crop-picker@0.18.1:
   resolved "https://registry.yarnpkg.com/react-native-image-crop-picker/-/react-native-image-crop-picker-0.18.1.tgz#ebdbe72def5afb6c69aa6e2ad72fd3a7de8ee408"
   integrity sha512-63Yr+Mzl/CzDze1eqMg/GGFOODgGrixSMO+28TVGCX3982f76w/op0JKoL7zuSKz/P/mVsbi9RnHA0z6Ih/RHQ==
 
-"react-native-image-resizer@https://github.com/status-im/react-native-image-resizer.git#1.0.0-1":
+"react-native-image-resizer@git+https://github.com/status-im/react-native-image-resizer.git#1.0.0-1":
   version "1.0.0"
-  resolved "https://github.com/status-im/react-native-image-resizer.git#dcbe2e1c461b0dbc265435bfb873f0257c1a1c4a"
+  resolved "git+https://github.com/status-im/react-native-image-resizer.git#dcbe2e1c461b0dbc265435bfb873f0257c1a1c4a"
 
 react-native-invertible-scroll-view@1.1.0:
   version "1.1.0"
@@ -5931,9 +5931,9 @@ react-native-invertible-scroll-view@1.1.0:
     react-clone-referenced-element "^1.0.1"
     react-native-scrollable-mixin "^1.0.1"
 
-"react-native-keychain@https://github.com/status-im/react-native-keychain#v.3.0.0-status":
+"react-native-keychain@git+https://github.com/status-im/react-native-keychain.git#v.3.0.0-status":
   version "3.0.0-rc.3"
-  resolved "https://github.com/status-im/react-native-keychain#43e5512cabb8ee064fd9e503be943dcf2c7d7669"
+  resolved "git+https://github.com/status-im/react-native-keychain.git#43e5512cabb8ee064fd9e503be943dcf2c7d7669"
 
 react-native-level-fs@3.0.1:
   version "3.0.1"
@@ -5943,9 +5943,9 @@ react-native-level-fs@3.0.1:
     level-filesystem "^1.0.1"
     levelup "^0.18.2"
 
-"react-native-os@https://github.com/status-im/react-native-os.git#1.1.0-1":
+"react-native-os@git+https://github.com/status-im/react-native-os.git#1.1.0-1":
   version "1.1.0"
-  resolved "https://github.com/status-im/react-native-os.git#1a6d0835f919cb075793ad7c602f2724eee4702d"
+  resolved "git+https://github.com/status-im/react-native-os.git#1a6d0835f919cb075793ad7c602f2724eee4702d"
 
 react-native-qrcode@0.2.7:
   version "0.2.7"
@@ -5988,9 +5988,9 @@ react-native-scrollable-mixin@^1.0.1:
   resolved "https://registry.yarnpkg.com/react-native-scrollable-mixin/-/react-native-scrollable-mixin-1.0.1.tgz#34a32167b64248594154fd0d6a8b03f22740548e"
   integrity sha1-NKMhZ7ZCSFlBVP0NaosD8idAVI4=
 
-"react-native-securerandom@https://github.com/status-im/react-native-securerandom#0.1.1-1":
+"react-native-securerandom@git+https://github.com/status-im/react-native-securerandom.git#0.1.1-1":
   version "0.1.1"
-  resolved "https://github.com/status-im/react-native-securerandom#ff9f56fae93520c78503c10e24603d3853aece0f"
+  resolved "git+https://github.com/status-im/react-native-securerandom.git#ff9f56fae93520c78503c10e24603d3853aece0f"
   dependencies:
     base64-js "*"
 
@@ -5999,9 +5999,9 @@ react-native-splash-screen@3.1.1:
   resolved "https://registry.yarnpkg.com/react-native-splash-screen/-/react-native-splash-screen-3.1.1.tgz#1a4e46c9fdce53ff52af2a2cb4181788c4e30b30"
   integrity sha512-PU2YocOSGbLjL9Vgcq/cwMNuHHKNjjuPpa1IPMuWo+6EB/fSZ5VOmxSa7+eucQe3631s3NhGuk3eHKahU03a4Q==
 
-"react-native-status-keycard@https://github.com/status-im/react-native-status-keycard":
-  version "2.0.1"
-  resolved "https://github.com/status-im/react-native-status-keycard#5a16166a97035d4edf94ad5278910df5740a4361"
+"react-native-status-keycard@git+https://github.com/status-im/react-native-status-keycard.git":
+  version "2.3.1"
+  resolved "git+https://github.com/status-im/react-native-status-keycard.git#2dffe6aae4d2d29bc2649637f3c4a9157b2460c6"
 
 react-native-svg@6.5.2:
   version "6.5.2"
@@ -6026,9 +6026,9 @@ react-native-tab-view@^1.0.0:
   dependencies:
     prop-types "^15.6.1"
 
-"react-native-tcp@https://github.com/status-im/react-native-tcp.git#3.3.0-1":
+"react-native-tcp@git+https://github.com/status-im/react-native-tcp.git#3.3.0-1":
   version "3.3.0"
-  resolved "https://github.com/status-im/react-native-tcp.git#08e9794f2076e67963e027b42b562c9f4c979b2e"
+  resolved "git+https://github.com/status-im/react-native-tcp.git#08e9794f2076e67963e027b42b562c9f4c979b2e"
   dependencies:
     base64-js "0.0.8"
     buffer "^5.0.0"
@@ -6037,9 +6037,9 @@ react-native-tab-view@^1.0.0:
     process "^0.11.9"
     util "^0.10.3"
 
-"react-native-udp@https://github.com/status-im/react-native-udp.git#2.3.1-1":
+"react-native-udp@git+https://github.com/status-im/react-native-udp.git#2.3.1-1":
   version "2.3.1"
-  resolved "https://github.com/status-im/react-native-udp.git#6e9a817326208f6ca36fa42b20f5e530c1b39d37"
+  resolved "git+https://github.com/status-im/react-native-udp.git#6e9a817326208f6ca36fa42b20f5e530c1b39d37"
   dependencies:
     base64-js "0.0.8"
     events "^1.0.2"
@@ -6459,9 +6459,9 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-"rn-snoopy@https://github.com/status-im/rn-snoopy.git":
+"rn-snoopy@git+https://github.com/status-im/rn-snoopy.git":
   version "2.0.2"
-  resolved "https://github.com/status-im/rn-snoopy.git#f23dc13469c6c2a694649f658cdc1d1eaf8def64"
+  resolved "git+https://github.com/status-im/rn-snoopy.git#f23dc13469c6c2a694649f658cdc1d1eaf8def64"
   dependencies:
     eslint-plugin-jsx-a11y "5.1.1"
     lodash "^3.10.0"
@@ -7411,9 +7411,9 @@ web3-utils@1.0.0-beta.36:
     underscore "1.8.3"
     utf8 "2.1.1"
 
-"web3@https://github.com/status-im/web3.js.git#features/pairing-message":
+"web3@git+https://github.com/status-im/web3.js.git#features/pairing-message":
   version "0.20.1"
-  resolved "https://github.com/status-im/web3.js.git#dad342dc95f7d5a888411ed57c9618937e2b6ebd"
+  resolved "git+https://github.com/status-im/web3.js.git#dad342dc95f7d5a888411ed57c9618937e2b6ebd"
   dependencies:
     bignumber.js "git+https://github.com/status-im/bignumber.js.git#v4.0.2-status"
     crypto-js "^3.1.4"
